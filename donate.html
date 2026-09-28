@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate — GlobaLink Mentors</title>
+<meta name="description" content="Support GlobaLink Mentors with a one-time or recurring donation via M-Pesa. Choose an amount and fund mentorship, workshops and school partnerships.">
+<link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+    <a href="index.html" class="brand">
+    <div class="logo-circle">
+        <img src="images/logo.png" alt="GlobaLink Mentors logo" class="brand-logo">
+    </div>
+
+</a>
+    <ul class="nav-links">
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="donate.html" aria-current="page">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="donate.html" class="btn btn-red">Donate Now</a></div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Home</a> / Donate</p>
+    <p class="kicker">Fund a mentor. Fund a future.</p>
+    <h1>Your donation pays for a real mentorship session.</h1>
+    <p>Every shilling goes toward mentor training, school visits, workshop materials and transport — pay quickly and securely via M-Pesa.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container donate-wrap">
+
+    <div class="donate-card">
+      <div class="donate-tabs">
+        <button type="button" class="is-active" data-tab="once">SEND YOUR DONATION</button>
+      </div>
+
+      <form data-donate-form novalidate>
+        <label class="field" style="margin-bottom:10px;"><span style="font-weight:700;">Choose an amount (KES)</span></label>
+        <div class="amount-grid">
+          <button type="button" class="amount-btn" data-amount="50">50<small>Buys pencils</small></button>
+          <button type="button" class="amount-btn" data-amount="100">100<small>A worksheet set</small></button>
+          <button type="button" class="amount-btn" data-amount="200">200<small>One session snack</small></button>
+          <button type="button" class="amount-btn is-selected" data-amount="500">500<small>One mentor visit</small></button>
+          <button type="button" class="amount-btn" data-amount="1000">1,000<small>A month of sessions</small></button>
+          <button type="button" class="amount-btn" data-amount="2000">2,000<small>Workshop materials</small></button>
+          <button type="button" class="amount-btn" data-amount="5000">5,000<small>A term of mentorship</small></button>
+          <button type="button" class="amount-btn" data-amount="10000">10,000<small>Sponsor a mentee</small></button>
+        </div>
+
+        <div class="custom-amount">
+          <span>KES</span>
+          <input type="number" name="customAmount" min="10" step="10" placeholder="Or enter a custom amount">
+        </div>
+        <input type="hidden" name="amount" value="500">
+
+        <div class="field-row">
+          <div class="field">
+            <label for="donorName">Full name</label>
+            <input type="text" id="donorName" name="donorName" placeholder="" required>
+          </div>
+          <div class="field">
+            <label for="phone">M-Pesa phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email (for your receipt)</label>
+          <input type="email" id="email" name="email" placeholder="">
+        </div>
+
+        <div class="mpesa-note">
+          <span style="font-size:1.3rem;">&#128241;</span>
+          <span>Click "Pay with M-Pesa" and a Lipa Na M-Pesa prompt (STK Push) will be sent to your phone. Enter your M-Pesa PIN to confirm — no card details needed, no app to install.</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Pay with M-Pesa</button>
+        <div class="donate-status"></div>
+      </form>
+    </div>
+
+    <div class="donate-side">
+      <div class="card" style="border-top-color:var(--red);">
+        <h3>Where your money goes</h3>
+        <ul class="impact-list">
+          <li><strong>60%</strong>&nbsp;— Mentor training, transport &amp; stipends</li>
+          <li><strong>25%</strong>&nbsp;— Learning &amp; workshop materials</li>
+          <li><strong>10%</strong>&nbsp;— Monitoring, evaluation &amp; reporting</li>
+          <li><strong>5%</strong>&nbsp;— Administration</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top-color:var(--);">
+        <h3>Other Donations</h3>
+        <p style="font-size:0.9rem;">You can donate books to schools and other learing materials. </p>
+        <a href="contact.html" class="btn-ghost" style="font-weight:700;">Contact our the office &rarr;</a>
+      </div>
+      <div class="card" style="border-top-color:var(--black);">
+        <h3>Volunteering</h3>
+        <p style="font-size:0.9rem;">Becoming a volunteer mentor costs nothing but an hour a week.</p>
+        <a href="contact.html" class="btn btn-outline btn-block">Become a Mentor</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GlobaLink Mentors logo">
+            <circle cx="22" cy="22" r="21" fill="#2A241D"/>
+            <path d="M14 26 C14 18 20 14 26 16" stroke="#0E6B37" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M30 18 C30 26 24 30 18 28" stroke="#C62B2B" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <circle cx="22" cy="22" r="3.2" fill="#F0AC3A"/>
+          </svg>
+          <span class="brand-word">GlobaLink<span>Mentors</span></span>
+        </a>
+        <p>Connecting caring mentors with young people across East Africa since 2013.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="X / Twitter">x</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="impact.html">Our Impact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+254700000000">+254 700 000 000</a></li>
+          <li><a href="mailto:hello@globalinkmentors.org">hello@globalinkmentors.org</a></li>
+          <li><a href="contact.html">Kilimani, Nairobi, Kenya</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-join">
+          <h4>Join Us</h4>
+          <p>Become a mentor, volunteer or partner school.</p>
+          <a href="contact.html" class="btn btn-primary btn-block">Join Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year></span> GlobaLink Mentors. All rights reserved.</span>
+      <span><a href="contact.html">Privacy</a> &middot; <a href="contact.html">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
