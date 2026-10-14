@@ -105,7 +105,14 @@ section{ padding:88px 0; }
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
 }
-
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .column {
+    width: 100%; /* Stacks columns vertically on phones */
+  }
+}
 /* ---------- eyebrow / kicker ---------- */
 .kicker{
   font-family:var(--font-display);
