@@ -76,43 +76,7 @@
 .brand-word span {
     color: #0E6B37;
 }
-/* --- DESKTOP FIRST STYLES (Default for larger screens) --- */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
 
-.container {
-    display: flex;          /* Arranges items side-by-side on desktop */
-    gap: 20px;              /* Puts space between the boxes */
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.box {
-    flex: 1;                /* Makes all boxes equal width */
-    background-color: #f4f4f4;
-    padding: 20px;
-    border: 1px solid #ccc;
-    text-align: center;
-}
-
-/* Makes sure images don't overflow the screen */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/* --- PHONE STYLES (Applies only to screens 768px wide or smaller) --- */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stacks the boxes vertically instead of side-by-side */
-    }
-
-    body {
-        padding: 10px;          /* Shrinks padding so content fits better on tiny screens */
     }
 }
 
