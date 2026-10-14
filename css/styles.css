@@ -45,7 +45,14 @@ body {
   background-color: var(--white-color);
   font-family: var(--body-font-family); 
 }
-
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .column {
+    width: 100%; /* Stacks columns vertically on phones */
+  }
+}
 
 /*---------------------------------------
   TYPOGRAPHY               
