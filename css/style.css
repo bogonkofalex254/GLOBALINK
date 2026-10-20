@@ -729,6 +729,7 @@ h2{
   align-items:center; justify-content:center; transition:background .2s ease;
 }
 .footer-social a:hover{ background:var(--green); }
+.footer-col { min-width:0; box-sizing:border-box; }
 .footer-col h4{ color:var(--white); font-size:0.95rem; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:18px; }
 .footer-col ul li{ margin-bottom:11px; }
 .footer-col a{ color:#C9BFA9; font-size:0.92rem; }
