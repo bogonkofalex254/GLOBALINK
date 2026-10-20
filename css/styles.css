@@ -1313,7 +1313,7 @@ padding: 10px;
 }
 
 .social-icon-link {
-  background: var(--site-footer-bg-color);
+  background: var(--white-color);
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
