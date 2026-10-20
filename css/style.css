@@ -736,7 +736,7 @@ h2{
 .footer-join{ background:var(--green); border-radius:12px; padding:22px; }
 .footer-join h4{ color:var(--white); }
 .footer-join p{ color:#DCEEE1; font-size:0.86rem; }
-.footer-join .btn{ margin-top:8px; }
+.footer-join .btn{ margin-top:4px; }
 .footer-bottom{ padding:22px 0; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:0.8rem; color:#8C8168; }
 .footer-bottom a{ color:#57b30b; }
 .footer-bottom a:hover{ color:var(--gold); }
