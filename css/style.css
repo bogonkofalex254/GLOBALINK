@@ -742,6 +742,53 @@ h2{
 .footer-bottom a{ color:#57b30b; }
 .footer-bottom a:hover{ color:var(--gold); }
 
+/* Join Us card */
+.footer-join {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #00e600, #4caf50);
+    overflow: hidden;
+}
+
+/* Heading */
+.footer-join h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.footer-join p {
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Join Us button */
+.footer-join .join-btn {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #32e600;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Prevent footer columns from overflowing */
+.footer-col {
+    min-width: 0;
+    box-sizing: border-box;
+}
 /* misc */
 .mt-0{ margin-top:0; }
 .text-center{ text-align:center; }
