@@ -10,50 +10,45 @@
 
 <!-- ============ HEADER ============ -->
 <header class="site-header">
-    
   <nav class="nav">
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
     <ul class="nav-links">
-      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="team.html">Team</a></li>
-      <li><a href="services.html">Services</a></li>
+      <li><a href="online classes.html">Online Classes</a></li>
     </ul>
-<a href="index.html" class="brand">
+    <a href="index.html" class="brand">
     <div class="logo-circle">
         <img src="images/logo.png" alt="GlobaLink Mentors logo" class="brand-logo">
     </div>
 
 </a>
-
-    <ul class="nav-links">
+     <ul class="nav-links">
       <li><a href="impact.html">Impact</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="online classes.html">Online Classes</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-   
   </nav>
 </header>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
 :root{
-  --bg:#f6f7f1; --card:#fff; --ink:#14261c; --mute:#5b6b61; --line:#dde3d8;
-  --green:#0b7a3e; --green-d:#085f31; --chalk:#f2c230; --soft:#e7f2e8; --err:#b3261e;
+  --bg:#f6f7f1; --card:#fff; --ink:#09f172; --mute:hsl(253, 93%, 44%); --line:#dde3d8;
+  --green:hsl(148, 91%, 50%); --green-d:#0af176; --chalk:hsl(9, 91%, 49%); --soft:hsl(125, 89%, 49%); --err:#b3261e;
   --h:'Bricolage Grotesque','Trebuchet MS',sans-serif; --b:'Source Sans 3',system-ui,sans-serif;
 }
 @media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--bg:#0f1a14;--card:#16251c;--ink:#eef3ea;--mute:#9db0a3;--line:#274034;--green:#35c26f;--green-d:hsl(0, 95%, 48%);--soft:#1b3326;--err:#ff8a80}
+  :root:not([data-theme="light"]){--bg:#040313;--card:lch(11.49% 16.23 69.21);--ink:#f3eeea;--mute:hwb(9 96% 1%);--line:#274034;--green:#35c26f;--green-d:hsl(0, 95%, 48%);--soft:#1b3326;--err:#ff8a80}
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--line);color:var(--ink);font:17px/1.55 var(--b)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--b)}
 h1,h2,h3{font-family:var(--h);line-height:1.1;margin:0}
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 header.hero{background:#10301f;color:#f3f7ef;padding:44px 0 56px;border-bottom:6px solid var(--chalk)}
 .hero h1{font-size:clamp(34px,6vw,60px);font-weight:800;max-width:14em}
-.hero p{max-width:34em;color:#c9d8cc;margin:16px 0 22px}
+.hero p{max-width:34em;color:hsl(132, 91%, 48%);margin:16px 0 22px}
 .hero .row{display:flex;gap:12px;flex-wrap:wrap}
 .btn{font:600 16px var(--b);border:0;border-radius:10px;padding:12px 20px;cursor:pointer;background:var(--green);color:#fff}
 .btn:hover{background:var(--green-d)}
@@ -97,12 +92,11 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--mute);fo
 </style>
 </head>
 <body>
-<div class="demo" id="demoBar">MPESA PAYMENT</div>
+<div class="demo" id="demoBar"><h1>ONLINE LESSONS<h2></div>
+  
 
 <header class="hero">
   <div class="wrap">
-    <h1>Pay with M-Pesa. Get your class code. Join on Google Meet.</h1>
-    <p>Live lessons and recorded classes for Junior School, Senior School and  STEM. Pay once per subject and get a code that unlocks your links.</p>
     <div class="row">
       <button class="btn chalk" onclick="document.getElementById('classes').scrollIntoView({behavior:'smooth'})">Choose a subject</button>
       <button class="btn ghost" id="haveCode">I already have a code</button>
@@ -132,7 +126,7 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--mute);fo
 const CONFIG = {
   DEMO_MODE: true,
   BUSINESS_NAME: "Darasa Online",
-  HELP_PHONE: "+254 729 393 728",
+  HELP_PHONE: "+254 726 393 728",
   ACCESS_DAYS: 30,                       // how long a code stays valid
   STK_ENDPOINT: "/api/mpesa/stkpush",    // your server -> Safaricom Daraja
   VERIFY_ENDPOINT: "/api/code/verify"    // your server checks the code
