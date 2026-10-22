@@ -77,8 +77,7 @@
     color: #0E6B37;
 }
 
-    }
-}
+
 
 *,*::before,*::after{ box-sizing:border-box; }
 html{ scroll-behavior:smooth; }
@@ -159,7 +158,7 @@ section{ padding:88px 0; }
    ========================================================= */
 .site-header{
   position:sticky; top:0; z-index:1000;
-  background:rgba(212, 145, 10, 0.92);
+  background:#07ce22eb;
   backdrop-filter:blur(8px);
   border-bottom:1px solid rgba(28,23,18,0.08);
 }
@@ -363,21 +362,26 @@ section{ padding:88px 0; }
   position:relative;
   overflow:hidden;
   padding:70px 0 0;
+  background-image: url('../images/b3.jpg');
+  background-size: cover;
+  
 }
 .hero::before{
   content:'';
   position:absolute; inset:0;
-  background:
-    radial-gradient(circle at 10% 10%, rgba(14,107,55,0.55), transparent 40%),
-    radial-gradient(circle at 90% 25%, rgba(198,43,43,0.4), transparent 45%),
-    radial-gradient(circle at 50% 100%, rgba(233,127,27,0.35), transparent 50%);
+  
   pointer-events:none;
 }
+
 .hero-grid{
   position:relative; z-index:2;
   display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;
   padding-bottom:56px;
+
+
 }
+
+  
 .hero-copy .kicker{ color:var(--gold); }
 .hero-copy h1{ color:var(--white); font-size:clamp(2.5rem,5.2vw,3.9rem); max-width:14ch; }
 .hero-copy p{ color:#E7DFCF; font-size:1.12rem; max-width:48ch; }
@@ -433,7 +437,15 @@ h2{
   font-weight: 100;
 
 }
+h1{
+  text-align: center;
+  font-weight: 100;
+  font-weight: bold;
 
+}
+.cta-band{
+  padding: auto;
+}
 /* =========================================================
    COUNTERS
    ========================================================= */
@@ -464,7 +476,7 @@ h2{
 @media (max-width:920px){ .grid-3, .grid-4{ grid-template-columns:repeat(2,1fr); } }
 @media (max-width:600px){ .grid-3, .grid-4, .grid-2{ grid-template-columns:1fr; } }
 
-.card{
+.card {
   background:var(--orange); border-radius:var(--radius); padding:30px 26px;
   box-shadow:var(--shadow); border-top:4px solid var(--green);
   transition:transform .2s ease, box-shadow .2s ease;
@@ -493,11 +505,12 @@ h2{
 .stat-strip div strong{ font-family:var(--font-display); font-size:1.8rem; color:var(--red); display:block; }
 .stat-strip div span{ font-size:0.8rem; text-transform:uppercase; color:var(--ink-soft); }
 
+
 .values-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
 @media (max-width:920px){ .values-grid{ grid-template-columns:repeat(2,1fr); } .split{ grid-template-columns:1fr; } .split.reverse .split-media{ order:0; } }
 @media (max-width:560px){ .values-grid{ grid-template-columns:1fr; } }
-.value-card{ text-align:left; padding:24px 20px; border-radius:10px; background:var(--white); box-shadow:var(--shadow); }
-.value-card .num{ font-family:var(--font-display); font-size:1.6rem; color:var(--orange); }
+.value-card{ text-align:left; padding:24px 20px; border-radius:10px; background:var(--orange); box-shadow:var(--shadow); }
+.value-card .num{ font-family:var(--font-display); font-size:1.6rem; color:var(--white); }
 
 .timeline{ position:relative; padding-left:30px; border-left:3px solid var(--green-tint); }
 .timeline-item{ position:relative; padding-bottom:36px; }
@@ -506,7 +519,11 @@ h2{
   background:var(--green); border:3px solid var(--paper);
 }
 .timeline-item .year{ font-family:var(--font-display); color:var(--red); font-weight:600; }
-
+h2{
+  text-align: center;
+  font-weight: 100;
+  color: hsl(0, 100%, 45%);
+}
 /* =========================================================
    TEAM
    ========================================================= */
@@ -697,7 +714,7 @@ h2{
 .partner-track{ display:flex; align-items:center; gap:64px; width:max-content; animation:marquee 30s linear infinite; }
 .partner-track:hover{ animation-play-state:paused; }
 .partner-logo{
-  font-family:var(--font-display); font-weight:700; font-size:1.3rem; color:var(--ink-soft);
+  font-family:var(--font-display); font-weight:700; font-size:1.3rem; color:var(--green-dark);
   display:flex; align-items:center; gap:10px; white-space:nowrap; opacity:0.8;
 }
 .partner-logo .dot{ width:10px; height:10px; border-radius:50%; }
@@ -717,15 +734,25 @@ h2{
 /* =========================================================
    FOOTER
    ========================================================= */
-.site-footer{ background:var(--ink); color:#D9CFBB; padding-top:64px; }
+.site-footer{ background:oklch(20.019% 0.00002 271.152);; color:var(--white); padding-top:64px; }
 .footer-top{ display:grid; grid-template-columns:1.2fr 1fr 1fr 1fr; gap:40px; padding-bottom:44px; border-bottom:1px solid rgba(255,255,255,0.1); }
 @media (max-width:900px){ .footer-top{ grid-template-columns:1fr 1fr; } }
 @media (max-width:560px){ .footer-top{ grid-template-columns:1fr; } }
 .footer-brand .brand-word{ color:var(--white); }
 .footer-brand p{ color:#0adf27; margin-top:14px; max-width:32ch; }
+
+.footer-brand img {
+  width: 20%;
+  height: 20%;
+  object-fit: contain;
+  border-radius: 50%;
+  background: white;
+  padding: 10x;
+  padding-top: auto;
+}
 .footer-social{ display:flex; gap:10px; margin-top:18px; }
 .footer-social a{
-  width:38px; height:38px; border-radius:50%; background:rgba(255, 255, 255, 0.08); display:flex;
+  width:38px; height:38px; border-radius:50%; background:hwb(0 7% 9% / 0.91); display:flex;
   align-items:center; justify-content:center; transition:background .2s ease;
 }
 .footer-social a:hover{ background:var(--green); }
@@ -734,13 +761,21 @@ h2{
 .footer-col ul li{ margin-bottom:11px; }
 .footer-col a{ color:#C9BFA9; font-size:0.92rem; }
 .footer-col a:hover{ color:var(--gold); }
-.footer-join{ background:var(--green); border-radius:12px; padding:22px; }
+.footer-join{ background:var(--red); border-radius:12px; padding:22px; }
 .footer-join h4{ color:var(--white); }
 .footer-join p{ color:#DCEEE1; font-size:0.86rem; }
 .footer-join .btn{ margin-top:4px; }
-.footer-bottom{ padding:22px 0; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:0.8rem; color:#8C8168; }
+.footer-bottom{ padding:22px 0; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:0.8rem; color:hsl(0, 100%, 100%); }
 .footer-bottom a{ color:#57b30b; }
+.footer-bottom p {}
 .footer-bottom a:hover{ color:var(--gold); }
+
+.footer-logo {
+    width: 65px;
+    height: 65px;
+    display: block;
+    object-fit: contain;
+}
 
 /* Join Us card */
 .footer-join {
@@ -749,32 +784,36 @@ h2{
     padding: 30px;
     box-sizing: border-box;
     border-radius: 20px;
-    background: linear-gradient(135deg, #00e600, #4caf50);
+    background: linear-gradient(135deg, hsl(0, 100%, 45%),);
     overflow: hidden;
 }
 
 /* Heading */
 .footer-join h4 {
     color: #fff;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 20px;
 }
 
 /* Description */
+/* Join Us Description */
 .footer-join p {
-    color: #fff;
+    color: hsl(0, 85%, 3%);
     line-height: 1.6;
-    margin-bottom: 25px;
+    margin: 0 0 25px;
+    text-align: center;
+    overflow-wrap: break-word;
 }
 
-/* Join Us button */
+/* Join Us Button */
 .footer-join .join-btn {
     display: block;
     width: 100%;
-    max-width: 100%;
+    max-width: 100px;
     box-sizing: border-box;
-    margin: 0;
-    padding: 15px 20px;
+    margin: 0 auto;
+    padding: 12px 20px;
     border: none;
     border-radius: 50px;
     background-color: #32e600;
@@ -782,14 +821,65 @@ h2{
     text-align: center;
     text-decoration: none;
     font-weight: bold;
+    overflow-wrap: break-word;
+    cursor: pointer;
 }
 
-/* Prevent footer columns from overflowing */
+/* Prevent Footer Columns from Overflowing */
 .footer-col {
     min-width: 0;
+    max-width: 100%;
     box-sizing: border-box;
 }
-/* misc */
-.mt-0{ margin-top:0; }
-.text-center{ text-align:center; }
-.badge{ display:inline-block; background:var(--gold); color:var(--ink); font-weight:700; font-size:0.72rem; text-transform:uppercase; padding:5px 12px; border-radius:999px; letter-spacing:0.04em; }
+
+/* Prevent Join Us Section from Overflowing */
+.footer-join {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+/* Ensure All Elements Respect Their Container Width */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Miscellaneous Utilities */
+.mt-0 {
+    margin-top: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    background: var(--gold);
+    max-width: 100%;
+    box-sizing: border-box;
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 999px;
+    letter-spacing: 0.04em;
+   
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-join .join-btn {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+}
+
